@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alphabet Audio Learning</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff6f61;
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .item {
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .item img {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .label {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #333;
+      font-weight: bold;
+    }
+
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+    <h1>CLICK PHOTO FOR THE SOUND</h1>
+
+<div class="container">
+  <div class="item"><audio id="aud" src="WhatsApp Audio 2025-06-05 at 17.16.54_df3aa322.opus"></audio>
+    <img src="apple.jpeg" onclick="hey()"></div>
+
+  <div class="item"><audio id="aud1" src="B.opus"></audio>
+    <img src="bee.png" onclick="hey1()"></div>
+
+  <div class="item"><audio id="aud2" src="C.opus"></audio>
+    <img src="cat.jpeg" onclick="hey2()"></div>
+
+  <div class="item"><audio id="aud3" src="D.opus"></audio>
+    <img src="dog.jpeg" onclick="hey3()"></div>
+
+  <div class="item"><audio id="aud4" src="E.opus"></audio>
+    <img src="elephant.jpeg" onclick="hey4()"></div>
+
+  <div class="item"><audio id="aud5" src="F.opus"></audio>
+    <img src="fish.jpeg" onclick="hey5()"></div>
+
+  <div class="item"><audio id="aud6" src="G.opus"></audio>
+    <img src="giraffe.jpeg" onclick="hey6()"></div>
+
+  <div class="item"><audio id="aud7" src="H.opus"></audio>
+    <img src="horse.jpeg" onclick="hey7()"></div>
+
+  <div class="item"><audio id="aud8" src="I.opus"></audio>
+    <img src="ice.jpeg" onclick="hey8()"></div>
+
+  <div class="item"><audio id="aud9" src="J.opus"></audio>
+    <img src="jug.jpeg" onclick="hey9()"></div> 
+
+  <div class="item"><audio id="aud10" src="K.opus"></audio>
+    <img src="kangroo.jpeg" onclick="hey10()"></div>
+
+  <div class="item"><audio id="aud11" src="L.opus"></audio>
+    <img src="lion.jpeg" onclick="hey11()"></div>
+
+  <div class="item"><audio id="aud12" src="M.opus"></audio>
+    <img src="moon.jpeg" onclick="hey12()"></div>
+
+  <div class="item"><audio id="aud13" src="N.opus"></audio>
+    <img src="nest.jpeg" onclick="hey13()"></div>
+
+  <div class="item"><audio id="aud14" src="O.opus"></audio>
+    <img src="octopus.jpeg" onclick="hey14()"></div>
+
+
+  <div class="item"><audio id="aud15" src="P.opus"></audio> 
+    <img src="pink.jpeg" onclick="hey15()"></div>
+
+  <div class="item"><audio id="aud16" src="Q.opus"></audio>
+    <img src="quite.jpeg" onclick="hey16()"></div>
+
+  <div class="item"><audio id="aud17" src="R.opus"></audio>
+    <img src="rose.jpeg" onclick="hey17()"></div>
+
+  <div class="item"><audio id="aud18" src="S.opus"></audio>
+    <img src="snake.jpeg" onclick="hey18()"></div>
+
+  <div class="item"><audio id="aud19" src="T.opus"></audio>
+    <img src="tiger.jpeg" onclick="hey19()"></div>
+
+  <div class="item"><audio id="aud20" src="U.opus"></audio>
+    <img src="umbrella.jpeg" onclick="hey20()"></div>
+
+  <div class="item"><audio id="aud21" src="V.opus"></audio>
+    <img src="van.jpeg" onclick="hey21()"></div>
+    
+  <div class="item"><audio id="aud22" src="W.opus"></audio>
+    <img src="watermelon.jpeg" onclick="he224()"></div>
+
+  <div class="item"><audio id="aud23" src="X.opus"></audio>
+    <img src="x ray.jpeg" onclick="hey23()"></div>
+
+  <div class="item"><audio id="aud24" src="Y.opus"></audio>
+    <img src="youghart.jpeg" onclick="hey24()"></div>
+
+  <div class="item"><audio id="aud25" src="Z.opus"></audio>
+    <img src="zebra.jpeg" onclick="hey25()"></div>
+</div>
+
+<script>
+  function hey(){ document.getElementById("aud").play(); }
+  function hey1() { document.getElementById("aud1").play(); }
+  function hey2() { document.getElementById("aud2").play(); }
+  function hey3() { document.getElementById("aud3").play(); }
+  function hey4() { document.getElementById("aud4").play(); }
+  function hey5() { document.getElementById("aud5").play(); }
+  function hey6() { document.getElementById("aud6").play(); }
+  function hey7() { document.getElementById("aud7").play(); }
+  function hey8() { document.getElementById("aud8").play(); }
+  function hey9() { document.getElementById("aud9").play(); }
+  function hey10() { document.getElementById("aud10").play(); }
+  function hey11() { document.getElementById("aud11").play(); }
+  function hey12() { document.getElementById("aud12").play(); }
+  function hey13() { document.getElementById("aud13").play(); }
+  function hey14() { document.getElementById("aud14").play(); }
+  function hey15() { document.getElementById("aud15").play(); }
+  function hey16() { document.getElementById("aud16").play(); }
+  function hey17() { document.getElementById("aud17").play(); }
+  function hey18() { document.getElementById("aud18").play(); }
+  function hey19() { document.getElementById("aud19").play(); }
+  function hey20() { document.getElementById("aud20").play(); }
+  function hey21() { document.getElementById("aud21").play(); }
+  function he224() { document.getElementById("aud22").play(); } 
+  function hey23() { document.getElementById("aud23").play(); }
+  function hey24() { document.getElementById("aud24").play(); }
+  function hey25() { document.getElementById("aud25").play(); }
+</script>
+
+</body>
+</html>

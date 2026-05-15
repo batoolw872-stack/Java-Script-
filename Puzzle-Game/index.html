@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black;" id="main" onclick="main()" ></button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-left: 60px;" onclick="btn1()" id="btn1">1</button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-left: 120px;" onclick="btn2()"  id="btn2" >2</button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-left: 180px;" onclick="btn3()"  id="btn3" >3</button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-top: 45px;" onclick="btn4()"  id="btn4" >4</button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-top: 45px; margin-left: 60px;" onclick="btn5()"  id="btn5" >5</button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-top: 45px; margin-left: 120px;" onclick="btn6()"  id="btn6" >6</button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-top: 45px; margin-left: 180px;" onclick="btn7()"  id="btn7" >7</button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-top: 90px;" onclick="btn8()"  id="btn8" >8</button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-top: 90px; margin-left: 60px;" onclick="btn9()"  id="btn9" >9</button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-top: 90px; margin-left: 120px;" onclick="btn10()"  id="btn10" >10</button>
+    <button style="position: absolute; width: 50px; height: 40px; border: 1px solid black; margin-top: 90px; margin-left: 180px;" onclick="btn11()"  id="btn11" >11</button>
+
+
+
+
+    <script>
+    function btn1(){
+        var main=document.getElementById("main").innerHTML;
+        var btn1=document.getElementById("btn1").innerHTML;
+        var btn2=document.getElementById("btn2").innerHTML;
+        var btn5=document.getElementById("btn5").innerHTML;
+
+
+
+        if(main==""){
+            document.getElementById("main").innerHTML=btn1;
+            document.getElementById("btn1").value="";
+
+            document.getElementById("btn1").innerHTML=main;
+            document.getElementById("main").value="";
+
+        }
+        else if(btn2==""){
+            document.getElementById("btn2").innerHTML=btn1;
+            document.getElementById("btn1").value="";
+
+            document.getElementById("btn1").innerHTML=btn2;
+            document.getElementById("btn2").value="";
+
+        }
+        else if(btn5==""){
+            document.getElementById("btn5").innerHTML=btn1;
+            document.getElementById("btn1").value="";
+
+            document.getElementById("btn1").innerHTML=btn5;
+            document.getElementById("btn5").value="";
+
+        }
+        
+
+    }
+
+
+   function main(){
+        var main=document.getElementById("main").innerHTML;
+        var btn1=document.getElementById("btn1").innerHTML;
+        var btn4=document.getElementById("btn4").innerHTML;
+
+
+        if(btn1==""){
+            document.getElementById("btn1").innerHTML=main;
+            document.getElementById("main").value="";
+
+            document.getElementById("main").innerHTML=btn1;
+            document.getElementById("btn1").value="";
+
+        }
+        else if(btn4==""){
+            document.getElementById("btn4").innerHTML=main;
+            document.getElementById("main").value="";
+
+            document.getElementById("main").innerHTML=btn4;
+            document.getElementById("btn4").value="";
+
+        }
+
+    }
+
+
+    function btn2(){
+        var btn2=document.getElementById("btn2").innerHTML;
+        var btn1=document.getElementById("btn1").innerHTML;
+        var btn3=document.getElementById("btn3").innerHTML;
+        var btn6=document.getElementById("btn6").innerHTML;
+
+
+        if(btn1==""){
+            document.getElementById("btn1").innerHTML=btn2;
+            document.getElementById("btn2").value="";
+
+            document.getElementById("btn2").innerHTML=btn1;
+            document.getElementById("btn1").value="";
+
+        }
+        else if(btn3==""){
+            document.getElementById("btn3").innerHTML=btn2;
+            document.getElementById("btn2").value="";
+
+            document.getElementById("btn2").innerHTML=btn3;
+            document.getElementById("btn3").value="";
+
+        }
+        else if(btn6==""){
+            document.getElementById("btn6").innerHTML=btn2;
+            document.getElementById("btn2").value="";
+
+            document.getElementById("btn2").innerHTML=btn6;
+            document.getElementById("btn6").value="";
+
+        }
+
+     }
+  
+
+     function btn3(){
+        var btn3=document.getElementById("btn3").innerHTML;
+        var btn2=document.getElementById("btn2").innerHTML;
+        var btn7=document.getElementById("btn7").innerHTML;
+
+
+        if(btn2==""){
+            document.getElementById("btn2").innerHTML=btn3;
+            document.getElementById("btn3").value="";
+
+            document.getElementById("btn3").innerHTML=btn2;
+            document.getElementById("btn2").value="";
+
+        }
+        else if(btn7==""){
+            document.getElementById("btn7").innerHTML=btn3;
+            document.getElementById("btn3").value="";
+
+            document.getElementById("btn3").innerHTML=btn7;
+            document.getElementById("btn7").value="";
+
+        }
+
+     }
+
+
+     function btn4(){
+        var btn4=document.getElementById("btn4").innerHTML;
+        var main=document.getElementById("main").innerHTML;
+        var btn5=document.getElementById("btn5").innerHTML;
+        var btn8=document.getElementById("btn8").innerHTML;
+
+
+        if(main==""){
+            document.getElementById("main").innerHTML=btn4;
+            document.getElementById("btn4").value="";
+
+            document.getElementById("btn4").innerHTML=main;
+            document.getElementById("main").value="";
+
+        }
+        else if(btn5==""){
+            document.getElementById("btn5").innerHTML=btn4;
+            document.getElementById("btn4").value="";
+
+            document.getElementById("btn4").innerHTML=btn5;
+            document.getElementById("btn5").value="";
+
+        }
+        else if(btn8==""){
+            document.getElementById("btn8").innerHTML=btn4;
+            document.getElementById("btn4").value="";
+
+            document.getElementById("btn4").innerHTML=btn8;
+            document.getElementById("btn8").value="";
+
+        }
+
+    }
+
+
+    function btn5(){
+        var btn5=document.getElementById("btn5").innerHTML;
+        var btn4=document.getElementById("btn4").innerHTML;
+        var btn6=document.getElementById("btn6").innerHTML;
+        var btn9=document.getElementById("btn9").innerHTML;
+        var btn1=document.getElementById("btn1").innerHTML;
+        
+
+        if(btn4==""){
+            document.getElementById("btn4").innerHTML=btn5;
+            document.getElementById("btn5").value="";
+
+            document.getElementById("btn5").innerHTML=btn4;
+            document.getElementById("btn4").value="";
+
+        }
+        else if(btn6==""){
+            document.getElementById("btn6").innerHTML=btn5;
+            document.getElementById("btn5").value="";
+
+            document.getElementById("btn5").innerHTML=btn6;
+            document.getElementById("btn6").value="";
+
+        }
+        else if(btn9==""){
+            document.getElementById("btn9").innerHTML=btn5;
+            document.getElementById("btn5").value="";
+
+            document.getElementById("btn5").innerHTML=btn9;
+            document.getElementById("btn9").value="";
+
+        }
+        else if(btn1==""){
+            document.getElementById("btn1").innerHTML=btn5;
+            document.getElementById("btn5").value="";
+
+            document.getElementById("btn5").innerHTML=btn1;
+            document.getElementById("btn1").value="";
+
+        }
+
+
+    }
+    
+    
+    function btn6(){
+        var btn6=document.getElementById("btn6").innerHTML;
+        var btn5=document.getElementById("btn5").innerHTML;
+        var btn7=document.getElementById("btn7").innerHTML;
+        var btn10=document.getElementById("btn10").innerHTML;
+        var btn2=document.getElementById("btn2").innerHTML;
+        
+
+        if(btn5==""){
+            document.getElementById("btn5").innerHTML=btn6;
+            document.getElementById("btn6").value="";
+
+            document.getElementById("btn6").innerHTML=btn5;
+            document.getElementById("btn5").value="";
+
+        }
+        else if(btn7==""){
+            document.getElementById("btn7").innerHTML=btn6;
+            document.getElementById("btn6").value="";
+
+            document.getElementById("btn6").innerHTML=btn7;
+            document.getElementById("btn7").value="";
+
+        }
+        else if(btn10==""){
+            document.getElementById("btn10").innerHTML=btn6;
+            document.getElementById("btn6").value="";
+
+            document.getElementById("btn6").innerHTML=btn10;
+            document.getElementById("btn10").value="";
+
+        }
+        else if(btn2==""){
+            document.getElementById("btn2").innerHTML=btn6;
+            document.getElementById("btn6").value="";
+
+            document.getElementById("btn6").innerHTML=btn2;
+            document.getElementById("btn2").value="";
+
+        }
+
+    }
+
+
+
+    function btn7(){
+        var btn7=document.getElementById("btn7").innerHTML;
+        var btn6=document.getElementById("btn6").innerHTML;
+        var btn11=document.getElementById("btn11").innerHTML;
+        var btn3=document.getElementById("btn3").innerHTML;
+        
+
+        if(btn6==""){
+            document.getElementById("btn6").innerHTML=btn7;
+            document.getElementById("btn7").value="";
+
+            document.getElementById("btn7").innerHTML=btn6;
+            document.getElementById("btn6").value="";
+
+        }
+        else if(btn11==""){
+            document.getElementById("btn11").innerHTML=btn7;
+            document.getElementById("btn7").value="";
+
+            document.getElementById("btn7").innerHTML=btn11;
+            document.getElementById("btn11").value="";
+
+        }
+        else if(btn3==""){
+            document.getElementById("btn3").innerHTML=btn7;
+            document.getElementById("btn7").value="";
+
+            document.getElementById("btn7").innerHTML=btn3;
+            document.getElementById("btn3").value="";
+
+        }
+
+    }
+
+
+    function btn8(){
+        var btn8=document.getElementById("btn8").innerHTML;
+        var btn4=document.getElementById("btn4").innerHTML;
+        var btn9=document.getElementById("btn9").innerHTML;
+
+        if(btn4==""){
+            document.getElementById("btn4").innerHTML=btn8;
+            document.getElementById("btn8").value="";
+
+            document.getElementById("btn8").innerHTML=btn4;
+            document.getElementById("btn4").value="";
+
+        }
+        else if(btn9==""){
+            document.getElementById("btn9").innerHTML=btn8;
+            document.getElementById("btn8").value="";
+
+            document.getElementById("btn8").innerHTML=btn9;
+            document.getElementById("btn9").value="";
+
+        }
+
+    }
+
+
+    function btn9(){
+        var btn9=document.getElementById("btn9").innerHTML;
+        var btn8=document.getElementById("btn8").innerHTML;
+        var btn10=document.getElementById("btn10").innerHTML;
+        var btn5=document.getElementById("btn5").innerHTML;
+
+        if(btn8==""){
+            document.getElementById("btn8").innerHTML=btn9;
+            document.getElementById("btn9").value="";
+
+            document.getElementById("btn9").innerHTML=btn8;
+            document.getElementById("btn8").value="";
+
+        }
+        else if(btn10==""){
+            document.getElementById("btn10").innerHTML=btn9;
+            document.getElementById("btn9").value="";
+
+            document.getElementById("btn9").innerHTML=btn10;
+            document.getElementById("btn10").value="";
+
+        }
+        else if(btn5==""){
+            document.getElementById("btn5").innerHTML=btn9;
+            document.getElementById("btn9").value="";
+
+            document.getElementById("btn9").innerHTML=btn5;
+            document.getElementById("btn5").value="";
+
+        }
+
+    }
+
+
+    function btn10(){
+        var btn10=document.getElementById("btn10").innerHTML;
+        var btn9=document.getElementById("btn9").innerHTML;
+        var btn11=document.getElementById("btn11").innerHTML;
+        var btn6=document.getElementById("btn6").innerHTML;
+
+        if(btn9==""){
+            document.getElementById("btn9").innerHTML=btn10;
+            document.getElementById("btn10").value="";
+
+            document.getElementById("btn10").innerHTML=btn9;
+            document.getElementById("btn9").value="";
+
+        }
+        else if(btn11==""){
+            document.getElementById("btn11").innerHTML=btn10;
+            document.getElementById("btn10").value="";
+
+            document.getElementById("btn10").innerHTML=btn11;
+            document.getElementById("btn11").value="";
+
+        }
+        else if(btn6==""){
+            document.getElementById("btn6").innerHTML=btn10;
+            document.getElementById("btn10").value="";
+
+            document.getElementById("btn10").innerHTML=btn6;
+            document.getElementById("btn6").value="";
+
+        }
+
+
+    }
+
+
+    function btn11(){
+        var btn11=document.getElementById("btn11").innerHTML;
+        var btn10=document.getElementById("btn10").innerHTML;
+        var btn7=document.getElementById("btn7").innerHTML;
+        
+        if(btn10==""){
+            document.getElementById("btn10").innerHTML=btn11;
+            document.getElementById("btn11").value="";
+
+            document.getElementById("btn11").innerHTML=btn10;
+            document.getElementById("btn10").value="";
+
+        }
+        else if(btn7==""){
+            document.getElementById("btn7").innerHTML=btn11;
+            document.getElementById("btn11").value="";
+
+            document.getElementById("btn11").innerHTML=btn7;
+            document.getElementById("btn7").value="";
+
+        }
+
+    }
+ 
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+
+var name = prompt("Customer's name");
+var age = parseInt(prompt("Customer's age"));
+var phone = parseInt(prompt("phone no"));
+var locat = prompt("Customer's location \n 1: Larkana \n 2: Karachi \n 3: Hyderabad \n 4: Moro   ");
+var distination = prompt("Customer's distination \n 1: Larkana \n 2: Karachi \n 3: Hyderabad \n 4: Moro ");
+
+
+if (age <= 10) {
+    var price="free";
+}
+else if(locat =="Larkana" && distination =="Karachi"){
+    var price=1500;
+}
+else if (locat =="Larkana" && distination =="Hyderabad") {
+    var price=1000;
+}
+else if (locat =="Larkana" && distination =="Moro") {
+    var price=700;
+}
+else if (locat =="Karachi" && distination =="Larkana") {
+    var price=1500;
+}
+else if (locat =="Karachi" && distination =="Hyderabad") {
+    var price=800;
+}
+else if (locat =="Karachi" && distination =="Moro") {
+    var price=1000;
+}
+else if (locat =="Hyderabad" && distination =="Larkana") {
+    var price=1000;
+}
+else if (locat =="Hyderabad" && distination =="Karachi") {
+    var price=800;
+}
+else if (locat =="Hyderabad" && distination =="Moro") {
+    var price=1100;
+}
+else if (locat =="Moro" && distination =="Larkana") {
+    var price=700;
+}
+else if (locat =="Moro" && distination =="Karachi") {
+    var price=1000;
+}
+else if (locat =="Moro" && distination =="Hyderabad") {
+    var price=1000;
+}
+else{
+    document.write("CHECK YOUR DETAILS")
+}
+
+document.write("<table border='2px'>");
+
+
+document.write("<h6 style = ' color:green;'>Indication Ticket System</h6>");
+document.write("Customer's Name : "+name+ "<br>");
+document.write("Customer's Age : "+age+ "<br>");
+document.write("Customer's phone : "+phone+ "<br>");
+document.write("Customer's location : "+locat+ "<br>");
+document.write("Customer's Distination :  "+distination+ "<br>");
+document.write("Ticket price  : "+price);
+
+document.write("</table>")
+
+// var charges;
+
+// if (age <= 10){
+//     charges == "free";
+// }
+// else{
+//     if (location == "Kharachi") {
+//         if (distination == "Islamabad") {
+//             charges = 5000;
+//         }
+//         else if (distination == "Lahore") {
+//             charges = 4000;
+//         }
+//         else{
+//             document.write("Check your details ");
+//         }
+//     }
+
+//     else if (location == "Hyderabad") {
+//         if (distination == "Islamabad") {
+//             charges = 4000;
+//         }
+//         else if (distination == "Lahore") {
+//             charges = 3500;
+//         }
+//          else{
+//             document.write("Check your details ");
+//         }
+//     }
+// }
+
+
+
+</script>
+
+</body>
+</html>

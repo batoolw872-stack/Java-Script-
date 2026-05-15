@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Puzzle Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <h1>Number Puzzle</h1>
+    <p class="subtitle">Arrange the numbers in order to win</p>
+
+    <div class="game-container">
+        <div class="puzzle-grid">
+            <button id="main" onclick="main()"></button>
+            <button id="btn1" onclick="btn1()">1</button>
+            <button id="btn2" onclick="btn2()">2</button>
+            <button id="btn3" onclick="btn3()">3</button>
+            <button id="btn4" onclick="btn4()">4</button>
+            <button id="btn5" onclick="btn5()">5</button>
+            <button id="btn6" onclick="btn6()">6</button>
+            <button id="btn7" onclick="btn7()">7</button>
+            <button id="btn8" onclick="btn8()">8</button>
+            <button id="btn9" onclick="btn9()">9</button>
+            <button id="btn10" onclick="btn10()">10</button>
+            <button id="btn11" onclick="btn11()">11</button>
+        </div>
+    </div>
+
+    <script>
+        function swap(id1, id2) {
+            const b1 = document.getElementById(id1);
+            const b2 = document.getElementById(id2);
+            const temp = b1.innerHTML;
+            b1.innerHTML = b2.innerHTML;
+            b2.innerHTML = temp;
+        }
+
+        function btn1(){
+            var main = document.getElementById("main").innerHTML;
+            var btn1 = document.getElementById("btn1").innerHTML;
+            var btn2 = document.getElementById("btn2").innerHTML;
+            var btn5 = document.getElementById("btn5").innerHTML;
+
+            if(main === ""){
+                swap("main", "btn1");
+            } else if(btn2 === ""){
+                swap("btn1", "btn2");
+            } else if(btn5 === ""){
+                swap("btn1", "btn5");
+            }
+        }
+
+        function main(){
+            var main = document.getElementById("main").innerHTML;
+            var btn1 = document.getElementById("btn1").innerHTML;
+            var btn4 = document.getElementById("btn4").innerHTML;
+
+            if(btn1 === ""){
+                swap("main", "btn1");
+            } else if(btn4 === ""){
+                swap("main", "btn4");
+            }
+        }
+
+        function btn2(){
+            var btn1 = document.getElementById("btn1").innerHTML;
+            var btn2 = document.getElementById("btn2").innerHTML;
+            var btn3 = document.getElementById("btn3").innerHTML;
+            var btn6 = document.getElementById("btn6").innerHTML;
+
+            if(btn1 === ""){
+                swap("btn2", "btn1");
+            } else if(btn3 === ""){
+                swap("btn2", "btn3");
+            } else if(btn6 === ""){
+                swap("btn2", "btn6");
+            }
+        }
+
+        function btn3(){
+            var btn2 = document.getElementById("btn2").innerHTML;
+            var btn3 = document.getElementById("btn3").innerHTML;
+            var btn7 = document.getElementById("btn7").innerHTML;
+
+            if(btn2 === ""){
+                swap("btn3", "btn2");
+            } else if(btn7 === ""){
+                swap("btn3", "btn7");
+            }
+        }
+
+        function btn4(){
+            var main = document.getElementById("main").innerHTML;
+            var btn4 = document.getElementById("btn4").innerHTML;
+            var btn5 = document.getElementById("btn5").innerHTML;
+            var btn8 = document.getElementById("btn8").innerHTML;
+
+            if(main === ""){
+                swap("btn4", "main");
+            } else if(btn5 === ""){
+                swap("btn4", "btn5");
+            } else if(btn8 === ""){
+                swap("btn4", "btn8");
+            }
+        }
+
+        function btn5(){
+            var btn1 = document.getElementById("btn1").innerHTML;
+            var btn4 = document.getElementById("btn4").innerHTML;
+            var btn5 = document.getElementById("btn5").innerHTML;
+            var btn6 = document.getElementById("btn6").innerHTML;
+            var btn9 = document.getElementById("btn9").innerHTML;
+
+            if(btn4 === ""){
+                swap("btn5", "btn4");
+            } else if(btn6 === ""){
+                swap("btn5", "btn6");
+            } else if(btn9 === ""){
+                swap("btn5", "btn9");
+            } else if(btn1 === ""){
+                swap("btn5", "btn1");
+            }
+        }
+
+        function btn6(){
+            var btn2 = document.getElementById("btn2").innerHTML;
+            var btn5 = document.getElementById("btn5").innerHTML;
+            var btn6 = document.getElementById("btn6").innerHTML;
+            var btn7 = document.getElementById("btn7").innerHTML;
+            var btn10 = document.getElementById("btn10").innerHTML;
+
+            if(btn5 === ""){
+                swap("btn6", "btn5");
+            } else if(btn7 === ""){
+                swap("btn6", "btn7");
+            } else if(btn10 === ""){
+                swap("btn6", "btn10");
+            } else if(btn2 === ""){
+                swap("btn6", "btn2");
+            }
+        }
+
+        function btn7(){
+            var btn3 = document.getElementById("btn3").innerHTML;
+            var btn6 = document.getElementById("btn6").innerHTML;
+            var btn7 = document.getElementById("btn7").innerHTML;
+            var btn11 = document.getElementById("btn11").innerHTML;
+
+            if(btn6 === ""){
+                swap("btn7", "btn6");
+            } else if(btn11 === ""){
+                swap("btn7", "btn11");
+            } else if(btn3 === ""){
+                swap("btn7", "btn3");
+            }
+        }
+
+        function btn8(){
+            var btn4 = document.getElementById("btn4").innerHTML;
+            var btn8 = document.getElementById("btn8").innerHTML;
+            var btn9 = document.getElementById("btn9").innerHTML;
+
+            if(btn4 === ""){
+                swap("btn8", "btn4");
+            } else if(btn9 === ""){
+                swap("btn8", "btn9");
+            }
+        }
+
+        function btn9(){
+            var btn5 = document.getElementById("btn5").innerHTML;
+            var btn8 = document.getElementById("btn8").innerHTML;
+            var btn9 = document.getElementById("btn9").innerHTML;
+            var btn10 = document.getElementById("btn10").innerHTML;
+
+            if(btn8 === ""){
+                swap("btn9", "btn8");
+            } else if(btn10 === ""){
+                swap("btn9", "btn10");
+            } else if(btn5 === ""){
+                swap("btn9", "btn5");
+            }
+        }
+
+        function btn10(){
+            var btn6 = document.getElementById("btn6").innerHTML;
+            var btn9 = document.getElementById("btn9").innerHTML;
+            var btn10 = document.getElementById("btn10").innerHTML;
+            var btn11 = document.getElementById("btn11").innerHTML;
+
+            if(btn9 === ""){
+                swap("btn10", "btn9");
+            } else if(btn11 === ""){
+                swap("btn10", "btn11");
+            } else if(btn6 === ""){
+                swap("btn10", "btn6");
+            }
+        }
+
+        function btn11(){
+            var btn7 = document.getElementById("btn7").innerHTML;
+            var btn10 = document.getElementById("btn10").innerHTML;
+            var btn11 = document.getElementById("btn11").innerHTML;
+
+            if(btn10 === ""){
+                swap("btn11", "btn10");
+            } else if(btn7 === ""){
+                swap("btn11", "btn7");
+            }
+        }
+    </script>
+</body>
+</html>
